@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions button {
+    padding: 5px 8px;
+    cursor: pointer;
+}
